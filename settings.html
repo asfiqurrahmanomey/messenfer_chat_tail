@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- BEGIN: Head -->
+    
+<head>
+        <meta charset="utf-8">
+        <link href=" " rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="  admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+        <meta name="keywords" content="admin template,   admin template, dashboard template, flat admin template, responsive admin template, web app">
+        <meta name="author" content="LEFT4CODE">
+        <title>Messenger - Chat</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css"/>
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="main">
+        <!-- BEGIN: Top Bar -->
+        <div class="top-bar top-0 left-0 fixed w-full h-16">
+            <div class="-intro-y top-bar__content bg-white border-theme-3 dark:bg-dark-2 dark:border-dark-2 border-b w-full h-full flex px-5">
+                <!-- BEGIN: Logo -->
+                <a class="hidden md:flex items-center h-full mr-auto" href="http://localhost/page/dashboard">
+                    <div class="text-base font-light ml-4"> <span class="font-medium"> </span> Messenger </div>
+                </a>
+                <!-- END: Logo -->
+                <a class="mobile-menu-toggler flex md:hidden items-center h-full mr-auto px-5 -ml-5" href="javascript:;"> <i data-feather="bar-chart-2" class="w-5 h-5 transform rotate-90"></i> </a>
+                <div class="h-full flex items-center">
+                    <div class="mr-3">Dark Mode</div>
+                    <input class="form-check-switch" type="checkbox" id="dark-mode-switcher">
+                </div>
+                <div class="hidden md:flex items-center px-5"> <a href="javascript:;" data-toggle="modal" data-target="#invite-friends-modal" class="btn btn-primary">Invite Friends</a> </div>
+                <!-- BEGIN: Notifications -->
+                <div class="notification-dropdown dropdown">
+                    <a href="javascript:;" class="notification-dropdown__toggler text-gray-600 border-theme-7 dark:border-dark-4 dark:text-gray-300 dropdown-toggle h-full flex items-center px-5 relative -mr-3 md:mr-0 md:border-l md:border-r">
+                        <div class="relative">
+                            <i data-feather="bell" class="w-5 h-5"></i> 
+                            <div class="w-2 h-2 bg-theme-1 text-white flex items-center justify-center absolute -mt-0.5 top-0 right-0 rounded-full"></div>
+                        </div>
+                    </a>
+                    <div class="notification-dropdown__content dropdown-menu">
+                        <div class="dropdown-menu__content box dark:bg-dark-2 px-4 pt-4 pb-5">
+                            <div class="text-base font-medium leading-tight mb-4">Notifications</div>
+                            <div class="cursor-pointer relative flex items-center ">
+                                <div class="w-10 h-10 flex-none image-fit mr-1">
+                                    <img alt=" " class="rounded-full" src="dist/images/profile-13.jpg">
+                                    <div class="w-3 h-3 absolute right-0 bottom-0 bg-theme-1 border-white rounded-full border-2"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">John Travolta</a> 
+                                        <div class="text-opacity-50 text-gray-800 text-xs ml-auto whitespace-nowrap -mt-0.5">01:10 PM</div>
+                                    </div>
+                                    <div class="text-opacity-70 text-gray-800 dark:text-gray-500 w-full truncate mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-6">
+                                <div class="w-10 h-10 flex-none image-fit mr-1">
+                                    <img alt=" " class="rounded-full" src="dist/images/profile-6.jpg">
+                                    <div class="w-3 h-3 absolute right-0 bottom-0 bg-theme-1 border-white rounded-full border-2"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Christian Bale</a> 
+                                        <div class="text-opacity-50 text-gray-800 text-xs ml-auto whitespace-nowrap -mt-0.5">05:09 AM</div>
+                                    </div>
+                                    <div class="text-opacity-70 text-gray-800 dark:text-gray-500 w-full truncate mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-6">
+                                <div class="w-10 h-10 flex-none image-fit mr-1">
+                                    <img alt=" " class="rounded-full" src="dist/images/profile-2.jpg">
+                                    <div class="w-3 h-3 absolute right-0 bottom-0 bg-theme-1 border-white rounded-full border-2"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Tom Cruise</a> 
+                                        <div class="text-opacity-50 text-gray-800 text-xs ml-auto whitespace-nowrap -mt-0.5">06:05 AM</div>
+                                    </div>
+                                    <div class="text-opacity-70 text-gray-800 dark:text-gray-500 w-full truncate mt-0.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-6">
+                                <div class="w-10 h-10 flex-none image-fit mr-1">
+                                    <img alt=" " class="rounded-full" src="dist/images/profile-4.jpg">
+                                    <div class="w-3 h-3 absolute right-0 bottom-0 bg-theme-1 border-white rounded-full border-2"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Morgan Freeman</a> 
+                                        <div class="text-opacity-50 text-gray-800 text-xs ml-auto whitespace-nowrap -mt-0.5">01:10 PM</div>
+                                    </div>
+                                    <div class="text-opacity-70 text-gray-800 dark:text-gray-500 w-full truncate mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-6">
+                                <div class="w-10 h-10 flex-none image-fit mr-1">
+                                    <img alt=" " class="rounded-full" src="dist/images/profile-11.jpg">
+                                    <div class="w-3 h-3 absolute right-0 bottom-0 bg-theme-1 border-white rounded-full border-2"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Kevin Spacey</a> 
+                                        <div class="text-opacity-50 text-gray-800 text-xs ml-auto whitespace-nowrap -mt-0.5">06:05 AM</div>
+                                    </div>
+                                    <div class="text-opacity-70 text-gray-800 dark:text-gray-500 w-full truncate mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account -->
+                <div class="account-dropdown dropdown relative">
+                    <a href="javascript:;" class="h-full dropdown-toggle flex items-center pl-5">
+                        <div class="w-8 h-8 image-fit">
+                            <img alt=" " class="rounded-full shadow-md" src="dist/images/profile-14.jpg">
+                        </div>
+                        <div class="hidden md:block ml-3">
+                            <div class="w-28 truncate font-medium leading-tight">John Travolta</div>
+                            <div class="account-dropdown__info text-xs text-gray-600">Software Engineer</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-content dropdown-menu absolute w-56 top-0 right-0 z-20">
+                        <div class="dropdown-menu__content box dark:bg-dark-2">
+                            <div class="p-2">
+                                <a href="#" class="flex items-center block p-2 transition duration-300 ease-in-out rounded-md hover:bg-gray-200 dark:hover:bg-dark-3"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                                <a href="#" class="flex items-center block p-2 transition duration-300 ease-in-out rounded-md hover:bg-gray-200 dark:hover:bg-dark-3"> <i data-feather="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+                                <a href="#" class="flex items-center block p-2 transition duration-300 ease-in-out rounded-md hover:bg-gray-200 dark:hover:bg-dark-3"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                                <a href="#" class="flex items-center block p-2 transition duration-300 ease-in-out rounded-md hover:bg-gray-200 dark:hover:bg-dark-3"> <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                            </div>
+                            <div class="border-gray-200 dark:border-dark-4 p-2 border-t">
+                                <a href="#" class="flex items-center block p-2 transition duration-300 ease-in-out rounded-md hover:bg-gray-200 dark:hover:bg-dark-3"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Account -->
+            </div>
+        </div>
+        <!-- END: Top Bar -->
+        <!-- BEGIN: Invite Friends Modal -->
+        <div class="modal-invite-friends modal" id="invite-friends-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body p-4">
+                        <div class="intro-y text-lg font-medium">Invite Friends</div>
+                        <div class="modal-content__scrollable overflow-y-auto scrollbar-hidden -mx-4 px-4 mt-4">
+                            <div class="user-list">
+                                <div class="intro-y pb-3">
+                                    <div class="intro-y text-gray-500 mb-3">A</div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in ">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-13.jpg">
+                                                <div class="bg-green-500 border-white w-3 h-3 absolute right-0 bottom-0 rounded-full border-2"></div>
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">John Travolta</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 33 minutes ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-a-0">
+                                        </div>
+                                    </div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in mt-4">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-6.jpg">
+                                                <div class="bg-green-500 border-white w-3 h-3 absolute right-0 bottom-0 rounded-full border-2"></div>
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">Christian Bale</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 21 minutes ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-a-1">
+                                        </div>
+                                    </div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in mt-4">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-2.jpg">
+                                                <div class="bg-green-500 border-white w-3 h-3 absolute right-0 bottom-0 rounded-full border-2"></div>
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">Tom Cruise</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 20 seconds ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-a-2">
+                                        </div>
+                                    </div>
+                                    <div class="intro-y text-gray-500 mt-6 mb-3">B</div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in ">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-13.jpg">
+                                                <div class="bg-green-500 border-white w-3 h-3 absolute right-0 bottom-0 rounded-full border-2"></div>
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">John Travolta</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 33 minutes ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-b-0">
+                                        </div>
+                                    </div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in mt-4">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-6.jpg">
+                                                <div class="bg-green-500 border-white w-3 h-3 absolute right-0 bottom-0 rounded-full border-2"></div>
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">Christian Bale</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 21 minutes ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-b-1">
+                                        </div>
+                                    </div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in mt-4">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-2.jpg">
+                                                <div class="bg-green-500 border-white w-3 h-3 absolute right-0 bottom-0 rounded-full border-2"></div>
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">Tom Cruise</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 20 seconds ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-b-2">
+                                        </div>
+                                    </div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in mt-4">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-4.jpg">
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">Morgan Freeman</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 15 minutes ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-b-3">
+                                        </div>
+                                    </div>
+                                    <div class="intro-y text-gray-500 mt-6 mb-3">C</div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in ">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-13.jpg">
+                                                <div class="bg-green-500 border-white w-3 h-3 absolute right-0 bottom-0 rounded-full border-2"></div>
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">John Travolta</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 33 minutes ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-ac-0">
+                                        </div>
+                                    </div>
+                                    <div class="intro-y block">
+                                        <div class="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in mt-4">
+                                            <div class="w-10 h-10 flex-none image-fit mr-1">
+                                                <img alt=" " class="rounded-full" src="dist/images/profile-6.jpg">
+                                                <div class="bg-green-500 border-white w-3 h-3 absolute right-0 bottom-0 rounded-full border-2"></div>
+                                            </div>
+                                            <div class="ml-2 overflow-hidden">
+                                                <a href="javascript:;" class="font-medium">Christian Bale</a> 
+                                                <div class="flex items-center text-xs">
+                                                    <div class="text-gray-600 whitespace-nowrap text-xs mt-0.5">Last seen 21 minutes ago ago</div>
+                                                </div>
+                                            </div>
+                                            <input class="form-check-switch ml-auto" type="checkbox" id="friend-list-ac-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-list__action bg-white dark:bg-dark-6 -mx-4 px-4">
+                                    <button class="btn btn-primary w-full">Send Invitation</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Invite Friends Modal -->
+        <!-- BEGIN: Side Menu -->
+        <div class="side-menu hidden md:block top-0 left-0 fixed w-16 h-screen">
+            <div class="side-menu__content box border-theme-3 dark:bg-dark-2 dark:border-dark-2 -intro-x border-r w-full h-full pt-16 flex flex-col justify-center overflow-hidden">
+                <a class="-intro-x side-menu__content__link text-gray-600 dark:text-gray-300 relative tooltip py-5" href="index-2.html" data-placement="right" title="Chats" data-content="chats"> <i data-feather="mail" class="w-5 h-5 mx-auto"></i> </a>
+                <a class="-intro-x side-menu__content__link text-gray-600 dark:text-gray-300 relative tooltip py-5" href="index-2.html" data-placement="right" title="Groups" data-content="groups"> <i data-feather="edit" class="w-5 h-5 mx-auto"></i> </a>
+                <a class="-intro-x side-menu__content__link text-gray-600 dark:text-gray-300 relative tooltip py-5" href="index-2.html" data-placement="right" title="Contacts" data-content="contacts"> <i data-feather="users" class="w-5 h-5 mx-auto"></i> </a>
+                <a class="-intro-x side-menu__content__link text-gray-600 dark:text-gray-300 relative tooltip py-5" href="index-2.html" data-placement="right" title="Profile" data-content="profile"> <i data-feather="user" class="w-5 h-5 mx-auto"></i> </a>
+                <a class="-intro-x side-menu__content__link text-gray-600 dark:text-gray-300 relative tooltip py-5" href="login.html" data-placement="right" title="Login"> <i data-feather="lock" class="w-5 h-5 mx-auto"></i> </a>
+                <a class="-intro-x side-menu__content__link text-gray-600 dark:text-gray-300 relative tooltip py-5" href="register.html" data-placement="right" title="Register"> <i data-feather="user-plus" class="w-5 h-5 mx-auto"></i> </a>
+                <a class="-intro-x side-menu__content__link text-gray-600 dark:text-gray-300 relative tooltip py-5" href="settings.html" data-placement="right" title="Settings"> <i data-feather="settings" class="w-5 h-5 mx-auto"></i> </a>
+            </div>
+        </div>
+        <!-- END: Side Menu -->
+        <div class="md:pl-16 pt-16">
+            <div class="w-full md:w-full lg:w-3/4 p-6 mx-auto">
+                <div class="intro-y text-xl font-medium">Settings</div>
+                <div class="grid grid-cols-12 gap-6 mt-5">
+                    <div class="intro-y col-span-12 lg:col-span-6">
+                        <div class="intro-y box p-4">
+                            <div>
+                                <label for="setting-form-1" class="form-label">Photo</label>
+                                <div class="image-upload border shadow-sm relative flex flex-col items-center justify-center rounded-md py-8 mt-3">
+                                    <div class="image-upload__icon w-12 h-12 rounded-full flex items-center justify-center"> <i data-feather="image" class="w-5 h-5"></i> </div>
+                                    <div class="image-upload__info mt-2">Choose your group profile photo</div>
+                                    <input type="file" class="w-full h-full top-0 left-0 absolute opacity-0" id="setting-form-1">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label for="setting-form-2" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="setting-form-2">
+                            </div>
+                            <div class="mt-3">
+                                <label for="setting-form-3" class="form-label">Phone</label>
+                                <input type="text" class="form-control" id="setting-form-3">
+                            </div>
+                            <div class="mt-3">
+                                <label for="setting-form-4" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="setting-form-4">
+                            </div>
+                            <div class="mt-3">
+                                <label for="setting-form-5" class="form-label">Bio</label>
+                                <textarea class="form-control" rows="5" id="setting-form-5"></textarea>
+                            </div>
+                            <button class="btn btn-primary w-full mt-3">Save Settings</button>
+                        </div>
+                        <div class="intro-y box p-4 mt-5">
+                            <div class="flex items-center">
+                                <div class="mr-auto">
+                                    <div class="">Echo Cancellation</div>
+                                    <div class="text-gray-500">Lorem Ipsum is simply dummy text of the printing</div>
+                                </div>
+                                <input type="checkbox" class="form-check-switch">
+                            </div>
+                            <div class="flex items-center mt-5">
+                                <div class="mr-auto">
+                                    <div class="">Noise Reduction</div>
+                                    <div class="text-gray-500">Lorem Ipsum has been the industry's standard</div>
+                                </div>
+                                <input type="checkbox" class="form-check-switch">
+                            </div>
+                            <div class="flex items-center mt-5">
+                                <div class="mr-auto">
+                                    <div class="">Advanced Voice Activity</div>
+                                    <div class="text-gray-500">It was popularised in the 1960s</div>
+                                </div>
+                                <input type="checkbox" class="form-check-switch">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-y col-span-12 lg:col-span-6">
+                        <div class="intro-y box p-4">
+                            <div class="mt-3">
+                                <label for="change-password-1" class="form-label">Current Password</label>
+                                <input type="text" class="form-control" id="change-password-1" placeholder="Current Password">
+                            </div>
+                            <div class="mt-3">
+                                <label for="change-password-2" class="form-label">New Password</label>
+                                <input type="text" class="form-control" id="change-password-2" placeholder="New Password">
+                            </div>
+                            <div class="mt-3">
+                                <label for="change-password-3" class="form-label">Password Confirmation</label>
+                                <input type="text" class="form-control" id="change-password-3" placeholder="Password Confirmation">
+                            </div>
+                            <button class="btn btn-primary w-full mt-4">Change Password</button>
+                        </div>
+                        <div class="intro-y box p-4 mt-5">
+                            <div>
+                                <label for="social-media-form-1" class="form-label">Twitter</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"> <i data-feather="twitter" class="w-4 h-4 mt-0.5"></i> </div>
+                                    <input type="text" class="form-control" id="social-media-form-1" placeholder="Twitter Account">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label for="social-media-form-2" class="form-label">Facebook</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"> <i data-feather="facebook" class="w-4 h-4 mt-0.5"></i> </div>
+                                    <input type="text" class="form-control" id="social-media-form-2" placeholder="Facebook Account">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label for="social-media-form-3" class="form-label">Instagram</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"> <i data-feather="instagram" class="w-4 h-4 mt-0.5"></i> </div>
+                                    <input type="text" class="form-control" id="social-media-form-3" placeholder="Instagram Account">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label for="social-media-form-4" class="form-label">Github</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"> <i data-feather="github" class="w-4 h-4 mt-0.5"></i> </div>
+                                    <input type="text" class="form-control" id="social-media-form-4" placeholder="Github Account">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label for="social-media-form-5" class="form-label">Slack</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"> <i data-feather="slack" class="w-4 h-4 mt-0.5"></i> </div>
+                                    <input type="text" class="form-control" id="social-media-form-5" placeholder="Slack Account">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-full mt-3">Save Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BEGIN: JS Assets-->
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    <script data-pagespeed-no-defer>(function(){function f(b){var a=window;if(a.addEventListener)a.addEventListener("load",b,!1);else if(a.attachEvent)a.attachEvent("onload",b);else{var c=a.onload;a.onload=function(){b.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var k=window.pagespeed;function l(b,a,c,g,h){this.h=b;this.i=a;this.l=c;this.j=g;this.b=h;this.c=[];this.a=0}l.prototype.f=function(b){for(var a=0;250>a&&this.a<this.b.length;++a,++this.a)try{document.querySelector(this.b[this.a])&&this.c.push(this.b[this.a])}catch(c){}this.a<this.b.length?window.setTimeout(this.f.bind(this),0,b):b()};
+k.g=function(b,a,c,g,h){if(document.querySelector&&Function.prototype.bind){var d=new l(b,a,c,g,h);f(function(){window.setTimeout(function(){d.f(function(){for(var a="oh="+d.l+"&n="+d.j,a=a+"&cs=",b=0;b<d.c.length;++b){var c=0<b?",":"",c=c+encodeURIComponent(d.c[b]);if(131072<a.length+c.length)break;a+=c}k.criticalCssBeaconData=a;var b=d.h,c=d.i,e;if(window.XMLHttpRequest)e=new XMLHttpRequest;else if(window.ActiveXObject)try{e=new ActiveXObject("Msxml2.XMLHTTP")}catch(m){try{e=new ActiveXObject("Microsoft.XMLHTTP")}catch(n){}}e&&
+(e.open("POST.html",b+(-1==b.indexOf("?")?"?":"&")+"url="+encodeURIComponent(c)),e.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),e.send(a))})},0)})}};k.criticalCssBeaconInit=k.g;})();
+pagespeed.selectors=["*","* > .-intro-x","* > .-intro-y","* > .intro-x","* > .intro-y",".-mb-1",".-ml-5",".-mr-1",".-mr-3",".-mt-0",".-mt-0\\.5",".-mt-16",".-mt-2",".-mx-4",".-mx-5",".absolute",".accordion .accordion-collapse",".accordion .accordion-item",".accordion .accordion-item .accordion-header .accordion-button",".accordion.accordion-boxed .accordion-item",".account-dropdown .dropdown-content",".account-dropdown .dropdown-content .box",".auth",".auth .auth__input",".bg-center",".bg-contain",".bg-gray-200",".bg-green-500",".bg-no-repeat",".bg-theme-1",".bg-theme-2",".bg-white",".block",".border",".border-2",".border-b",".border-gray-200",".border-r",".border-t",".border-theme-3",".border-theme-5",".border-theme-7",".border-transparent",".border-white",".bottom-0",".box",".boxed-tabs a",".boxed-tabs a.active",".btn",".btn-danger",".btn-danger-soft",".btn-dark",".btn-dark-soft",".btn-elevated",".btn-elevated-danger",".btn-elevated-dark",".btn-elevated-primary",".btn-elevated-rounded",".btn-elevated-rounded-danger",".btn-elevated-rounded-dark",".btn-elevated-rounded-primary",".btn-elevated-rounded-secondary",".btn-elevated-rounded-success",".btn-elevated-rounded-warning",".btn-elevated-secondary",".btn-elevated-success",".btn-elevated-warning",".btn-facebook",".btn-instagram",".btn-lg",".btn-linkedin",".btn-outline-danger",".btn-outline-dark",".btn-outline-primary",".btn-outline-secondary",".btn-outline-success",".btn-outline-warning",".btn-primary",".btn-primary-soft",".btn-rounded",".btn-rounded-danger",".btn-rounded-dark",".btn-rounded-primary",".btn-rounded-secondary",".btn-rounded-success",".btn-rounded-warning",".btn-secondary",".btn-secondary-soft",".btn-sm",".btn-success",".btn-success-soft",".btn-twitter",".btn-warning",".btn-warning-soft",".capitalize",".chat-box",".chat-box .chat-input .chat-input__dropdown",".chat-box .chat-input .input",".chat-box .chat-text-box",".chat-box .chat-text-box .chat-text-box__content .chat-text-box__content__icon",".chat-box .chat-text-box .chat-text-box__photo",".chat-input__dropdown .dropdown-menu__content",".chat-input__smiley",".chat-input__smiley .chat-input__smiley__box",".chat-input__smiley .chat-input__smiley__box .chat-input__smiley__box__tabs a.active",".chat-list .chat-list__action",".chat-list .chat-list__notif",".clear-both",".col-span-12",".col-span-3",".cursor-pointer",".dark .accordion .accordion-collapse",".dark .accordion.accordion-boxed .accordion-item",".dark .box",".dark .boxed-tabs a.active",".dark .btn-danger",".dark .btn-dark",".dark .btn-elevated-danger",".dark .btn-elevated-dark",".dark .btn-elevated-primary",".dark .btn-elevated-rounded-danger",".dark .btn-elevated-rounded-dark",".dark .btn-elevated-rounded-primary",".dark .btn-elevated-rounded-secondary",".dark .btn-elevated-rounded-success",".dark .btn-elevated-rounded-warning",".dark .btn-elevated-secondary",".dark .btn-elevated-success",".dark .btn-elevated-warning",".dark .btn-outline-danger",".dark .btn-outline-dark",".dark .btn-outline-primary",".dark .btn-outline-secondary",".dark .btn-outline-success",".dark .btn-outline-warning",".dark .btn-primary",".dark .btn-rounded-danger",".dark .btn-rounded-dark",".dark .btn-rounded-primary",".dark .btn-rounded-secondary",".dark .btn-rounded-success",".dark .btn-rounded-warning",".dark .btn-secondary",".dark .btn-success",".dark .btn-warning",".dark .chat-input .chat-input__smiley .chat-input__smiley__box .chat-input__smiley__box__tabs a.active",".dark .dark\\:bg-dark-1",".dark .dark\\:bg-dark-2",".dark .dark\\:bg-dark-3",".dark .dark\\:bg-dark-6",".dark .dark\\:bg-theme-1",".dark .dark\\:border-dark-2",".dark .dark\\:border-dark-4",".dark .dark\\:border-dark-5",".dark .dark\\:hover\\:bg-dark-2",".dark .dark\\:hover\\:bg-dark-3",".dark .dark\\:hover\\:bg-theme-1",".dark .dark\\:text-gray-300",".dark .dark\\:text-gray-500",".dark .dark\\:text-gray-600",".dark .dark\\:text-theme-10",".dark .dark\\:text-white",".dark .form-check-input[type=\"checkbox\"]",".dark .form-check-input[type=\"radio\"]",".dark .form-check-label",".dark .form-check-switch",".dark .form-control",".dark .form-select",".dark .image-upload",".dark .input-group .input-group-text",".dark .modal-content",".dark .modal-content .modal-footer",".dark .modal-content .modal-header",".dark .modal-invite-friends .modal-content",".dark .side-menu .side-menu__content",".dark .side-menu .side-menu__content .side-menu__content__link.side-menu__content__link--active",".dark .tail-select .select-dropdown",".dark .tail-select .select-dropdown .dropdown-search",".dark .tail-select .select-dropdown ul li",".dark .tail-select .select-dropdown ul li.optgroup-title",".dark .tail-select .select-dropdown ul li.selected",".dark .tail-select .select-label",".dark .tail-select .select-label.tail-select-container .select-handle",".dark .tail-select input[type=\"text\"]",".dark .tippy-box",".dark .tippy-box > .tippy-svg-arrow",".dropdown-menu",".dropdown-menu .dropdown-menu__content",".dropdown-menu .dropdown-menu__content .tab-content .tab-pane",".dropdown-menu.show",".dropdown-menu.show > .dropdown-menu__content",".dropdown-menu.show > .dropdown-menu__content .tab-content .tab-pane",".duration-200",".duration-300",".ease-in-out",".fixed",".flex",".flex-1",".flex-col",".flex-none",".float-left",".float-right",".focus\\:outline-none",".focus\\:shadow-none",".font-light",".font-medium",".form-check",".form-check-input",".form-check-input[type=\"checkbox\"]",".form-check-input[type=\"radio\"]",".form-check-label",".form-check-switch",".form-control",".form-control-lg",".form-control-rounded",".form-control-sm",".form-control[readonly]",".form-help",".form-inline",".form-inline .form-control",".form-inline .form-label",".form-label",".form-select",".form-select-lg",".form-select-rounded",".form-select-sm",".form-select[readonly]",".gap-4",".gap-6",".grid",".grid-cols-12",".grid-cols-8",".h-1",".h-10",".h-12",".h-16",".h-2",".h-20",".h-3",".h-4",".h-5",".h-6",".h-8",".h-full",".h-screen",".hidden",".hover\\:bg-gray-100",".hover\\:bg-gray-200",".hover\\:bg-theme-1",".hover\\:text-theme-1",".hover\\:text-white",".image-fit",".image-fit > img",".image-upload",".image-upload .image-upload__icon",".image-upload .image-upload__info",".info-content",".input-group",".input-group .input-group-text",".input-group > .form-control",".input-group > .input-group-text",".inset-y-0",".items-center",".items-end",".justify-center",".justify-end",".leading-relaxed",".leading-tight",".left-0",".lg\\:col-span-6",".lg\\:w-3\\/4",".m-auto",".main",".main.main--backdrop",".mb-2",".mb-3",".mb-4",".mb-6",".md\\:block",".md\\:border-l",".md\\:border-r",".md\\:flex",".md\\:hidden",".md\\:mr-0",".md\\:p-20",".md\\:pl-16",".md\\:w-full",".min-h-screen",".ml-1",".ml-2",".ml-3",".ml-4",".ml-auto",".modal",".modal .modal-dialog",".modal .modal-dialog .modal-content",".modal .modal-dialog .modal-content > [data-dismiss=\"modal\"]",".modal .modal-dialog.modal-lg",".modal .modal-dialog.modal-sm",".modal .modal-dialog.modal-xl",".modal-body",".modal-content",".modal-footer",".modal-header",".modal-invite-friends .modal-content",".modal-invite-friends .modal-content .modal-content__scrollable",".modal.modal-overlap",".modal.modal-slide-over",".modal.modal-slide-over .modal-dialog",".modal.modal-slide-over .modal-dialog .modal-content",".modal.modal-slide-over .modal-dialog .modal-content > [data-dismiss=\"modal\"]",".modal.modal-slide-over.modal-static .modal-content",".modal.modal-slide-over.show",".modal.modal-slide-over.show > .modal-dialog",".modal.modal-slide-over.show > .modal-dialog .modal-content > [data-dismiss=\"modal\"]",".modal.modal-static .modal-content",".modal.show",".modal.show > .modal-dialog",".mr-1",".mr-2",".mr-3",".mr-4",".mr-5",".mr-auto",".mt-0",".mt-0\\.5",".mt-1",".mt-10",".mt-16",".mt-2",".mt-3",".mt-4",".mt-5",".mt-6",".mt-8",".mx-auto",".my-auto",".nav",".nav.nav-tabs .active",".notification-dropdown .notification-dropdown__content",".notification-dropdown .notification-dropdown__content .box",".opacity-0",".overflow-hidden",".overflow-x-auto",".overflow-x-hidden",".overflow-y-auto",".overflow-y-hidden",".overflow-y-scroll",".p-2",".p-3",".p-4",".p-5",".p-6",".pb-10",".pb-3",".pb-5",".pb-6",".pl-5",".pl-6",".pr-10",".pr-6",".pr-8",".pt-16",".pt-2",".pt-20",".pt-4",".pt-5",".px-2",".px-3",".px-4",".px-5",".px-6",".py-2",".py-3",".py-4",".py-5",".py-6",".py-8",".relative",".resize-none",".right-0",".rotate-90",".rounded",".rounded-full",".rounded-md",".scrollbar-hidden",".select-none",".shadow-md",".shadow-none",".shadow-sm",".shared-file .shared-file__icon",".side-content",".side-content.side-content--active",".side-menu",".side-menu .side-menu__content .side-menu__content__link.side-menu__content__link--active",".sm\\:block",".sm\\:flex-row",".sm\\:h-10",".sm\\:h-5",".sm\\:h-6",".sm\\:ml-2",".sm\\:ml-20",".sm\\:ml-3",".sm\\:ml-5",".sm\\:mr-0",".sm\\:mr-5",".sm\\:mt-0",".sm\\:text-left",".sm\\:text-sm",".sm\\:w-10",".sm\\:w-3\\/5",".sm\\:w-5",".sm\\:w-6",".static",".tab-content .tab-pane",".tab-content .tab-pane.active",".table",".tail-select",".tail-select *",".tail-select .select-dropdown",".tail-select .select-dropdown .dropdown-action",".tail-select .select-dropdown .dropdown-empty",".tail-select .select-dropdown .dropdown-inner",".tail-select .select-dropdown .dropdown-search",".tail-select .select-dropdown ul",".tail-select .select-dropdown ul li",".tail-select .select-dropdown ul li button",".tail-select .select-dropdown ul li.dropdown-option",".tail-select .select-dropdown ul li.dropdown-option .option-description",".tail-select .select-dropdown ul li.dropdown-option.disabled",".tail-select .select-dropdown ul li.dropdown-option.disabled .option-description",".tail-select .select-dropdown ul li.dropdown-option.hover",".tail-select .select-dropdown ul li.dropdown-option.hover .option-description",".tail-select .select-dropdown ul li.dropdown-option.selected",".tail-select .select-dropdown ul li.dropdown-option.selected .option-description",".tail-select .select-dropdown ul li.optgroup-title",".tail-select .select-dropdown ul li.optgroup-title button",".tail-select .select-dropdown ul li.selected",".tail-select .select-label",".tail-select .select-label .label-count",".tail-select .select-label .label-inner",".tail-select .select-label.tail-select-container",".tail-select .select-label.tail-select-container .label-inner",".tail-select .select-label.tail-select-container .select-handle",".tail-select button",".tail-select button.tail-all",".tail-select button.tail-none",".tail-select input[type=\"text\"]",".tail-select mark",".tail-select-container",".tail-select-container .select-handle",".tail-select-container.select-label .select-handle",".tail-select.active .select-label",".tail-select.active .select-label .label-count",".tail-select.active .select-label .label-inner",".tail-select.deselect .select-dropdown ul li.dropdown-option.selected",".tail-select.deselect .select-dropdown ul li.dropdown-option.selected .option-description",".tail-select.deselect .select-dropdown ul li.dropdown-option.selected.hover",".tail-select.deselect .select-dropdown ul li.dropdown-option.selected.hover .option-description",".tail-select.disabled .select-dropdown ul li.dropdown-option",".tail-select.disabled .select-dropdown ul li.dropdown-option .option-description",".tail-select.disabled .select-label",".tail-select.disabled button.tail-all",".tail-select.disabled button.tail-none",".tail-select.disabled input[type=\"text\"]",".tail-select.hide-disabled .select-dropdown ul li.disabled",".tail-select.hide-selected .select-dropdown ul li.selected",".tail-select.idle .select-label",".tail-select.idle .select-label .label-count",".tail-select.idle .select-label .label-inner",".tail-select.multiple .select-dropdown ul li.dropdown-option",".tail-select.multiple .select-dropdown ul li.dropdown-option.disabled",".tail-select.multiple .select-dropdown ul li.dropdown-option.selected",".tail-select.multiple .select-dropdown ul li.dropdown-option.selected.hover",".tail-select.multiple.disabled .select-dropdown ul li.dropdown-option",".tail-select.open-top .select-dropdown",".text-2xl",".text-base",".text-center",".text-gray-500",".text-gray-600",".text-gray-700",".text-gray-800",".text-lg",".text-opacity-50",".text-opacity-70",".text-opacity-80",".text-right",".text-theme-1",".text-white",".text-xl",".text-xs",".tippy-arrow",".tippy-box",".tippy-box .tippy-content",".tippy-box[data-animation=\"fade\"][data-state=\"hidden\"]",".tippy-box[data-animation=\"shift-away\"][data-state=\"hidden\"]",".tippy-box[data-animation=\"shift-away\"][data-state=\"hidden\"][data-placement^=\"bottom\"]",".tippy-box[data-animation=\"shift-away\"][data-state=\"hidden\"][data-placement^=\"left\"]",".tippy-box[data-animation=\"shift-away\"][data-state=\"hidden\"][data-placement^=\"right\"]",".tippy-box[data-animation=\"shift-away\"][data-state=\"hidden\"][data-placement^=\"top\"]",".tippy-box[data-inertia][data-state=\"visible\"]",".tippy-box[data-placement^=\"bottom\"] > .tippy-arrow",".tippy-box[data-placement^=\"bottom\"] > .tippy-svg-arrow",".tippy-box[data-placement^=\"bottom\"] > .tippy-svg-arrow > svg",".tippy-box[data-placement^=\"left\"] > .tippy-arrow",".tippy-box[data-placement^=\"left\"] > .tippy-svg-arrow",".tippy-box[data-placement^=\"left\"] > .tippy-svg-arrow > svg",".tippy-box[data-placement^=\"right\"] > .tippy-arrow",".tippy-box[data-placement^=\"right\"] > .tippy-svg-arrow",".tippy-box[data-placement^=\"right\"] > .tippy-svg-arrow > svg",".tippy-box[data-placement^=\"top\"] > .tippy-arrow",".tippy-box[data-placement^=\"top\"] > .tippy-svg-arrow",".tippy-box[data-placement^=\"top\"] > .tippy-svg-arrow > svg",".tippy-box[data-theme~=\"light\"]",".tippy-box[data-theme~=\"light\"] > .tippy-backdrop",".tippy-box[data-theme~=\"light\"] > .tippy-svg-arrow",".tippy-box[data-theme~=\"light\"][data-placement^=\"bottom\"] > .tippy-arrow",".tippy-box[data-theme~=\"light\"][data-placement^=\"left\"] > .tippy-arrow",".tippy-box[data-theme~=\"light\"][data-placement^=\"right\"] > .tippy-arrow",".tippy-box[data-theme~=\"light\"][data-placement^=\"top\"] > .tippy-arrow",".tippy-content",".tippy-popper[x-placement=\"bottom\"] .tippy-arrow",".tippy-popper[x-placement=\"bottom\"] .tippy-roundarrow",".tippy-popper[x-placement=\"bottom-end\"] .tippy-arrow",".tippy-popper[x-placement=\"bottom-end\"] .tippy-roundarrow",".tippy-popper[x-placement=\"bottom-start\"] .tippy-arrow",".tippy-popper[x-placement=\"bottom-start\"] .tippy-roundarrow",".tippy-popper[x-placement=\"left\"] .tippy-arrow",".tippy-popper[x-placement=\"left\"] .tippy-roundarrow",".tippy-popper[x-placement=\"left-end\"] .tippy-arrow",".tippy-popper[x-placement=\"left-end\"] .tippy-roundarrow",".tippy-popper[x-placement=\"left-start\"] .tippy-arrow",".tippy-popper[x-placement=\"left-start\"] .tippy-roundarrow",".tippy-popper[x-placement=\"right\"] .tippy-arrow",".tippy-popper[x-placement=\"right\"] .tippy-roundarrow",".tippy-popper[x-placement=\"right-end\"] .tippy-arrow",".tippy-popper[x-placement=\"right-end\"] .tippy-roundarrow",".tippy-popper[x-placement=\"right-start\"] .tippy-arrow",".tippy-popper[x-placement=\"right-start\"] .tippy-roundarrow",".tippy-popper[x-placement=\"top\"] .tippy-arrow",".tippy-popper[x-placement=\"top\"] .tippy-roundarrow",".tippy-popper[x-placement=\"top-end\"] .tippy-arrow",".tippy-popper[x-placement=\"top-end\"] .tippy-roundarrow",".tippy-popper[x-placement=\"top-start\"] .tippy-arrow",".tippy-popper[x-placement=\"top-start\"] .tippy-roundarrow",".tippy-svg-arrow",".tippy-svg-arrow > svg",".tooltip-content",".top-0",".top-bar",".top-bar .top-bar__content",".transform",".transition",".truncate",".typing-dots span",".underline",".uppercase",".user-list .user-list__action",".visible",".w-10",".w-12",".w-16",".w-2",".w-20",".w-28",".w-3",".w-4",".w-40",".w-4\\/5",".w-5",".w-56",".w-6",".w-8",".w-auto",".w-full",".whitespace-nowrap",".xl\\:-ml-16",".xl\\:-mr-6",".xl\\:border-l",".xl\\:border-r",".xl\\:col-span-3",".xl\\:col-span-6",".xl\\:h-screen",".xl\\:mr-3",".xl\\:mt-0",".xl\\:mt-8",".xl\\:pl-0",".xl\\:pl-16",".xl\\:pt-6",".xl\\:text-center",".xl\\:text-left",".xl\\:w-auto",".z-20",".zoom-in","[data-tippy-root]","[role=\"button\"]","[type=\"button\"]","[type=\"reset\"]","[type=\"search\"]","a","abbr[title]","audio","b","blockquote","body","button","canvas","code","dd","dl","embed","fieldset","figure","h1","h2","h3","h4","h5","h6","hr","html","html body","html.dark","html.dark body","html.dark body *","iframe","img","input","kbd","legend","object","ol","optgroup","p","pre","progress","samp","select","small","strong","sub","summary","sup","svg","table","textarea","ul","video"];pagespeed.criticalCssBeaconInit('/ngx_pagespeed_beacon','settings.html','UDcGd8xld-','FDzJQl-GSGE',pagespeed.selectors);</script></body>
+
+</html>
